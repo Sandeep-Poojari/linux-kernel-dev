@@ -38,7 +38,7 @@ static int __init my_init(void)
 
 	gpiod_set_value(led, 1);
 
-	printk("gpioctrl - Button is %spressed\n", gpiod_get_value(button) ? "" : "not ");
+	printk("gpioctrl - Button is %spressed\n", gpiod_get_value(button) ? "not " : "");
 
 	return 0;
 }
